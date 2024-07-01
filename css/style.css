@@ -939,3 +939,14 @@ body.mobile-nav-active #mobile-nav-toggle i{
   font-size: 13px;
   color: #ccc;
 }
+
+/* Locations Section */
+#locations {
+  background: #fff;
+  padding: 80px 0;
+  text-align: center;
+}
+
+.contact-logo {
+  margin-top: -20px;
+}
