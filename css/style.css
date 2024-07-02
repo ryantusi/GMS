@@ -601,35 +601,20 @@ body.mobile-nav-active #mobile-nav-toggle i{
   margin-bottom: 0;
 }
 
-/*
-  Facts
-*/
-
-#stats {
-  text-align: center;
-  padding: 50px 0;
-  background-color: #f9f9f9;
-}
-
-#stats .container {
+.stats-container {
   display: flex;
-  justify-content: space-around;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
-#stats .stat {
-  flex: 1;
-  margin: 0 20px;
-}
-
-#stats .count {
+/* Counting Effect
+--------------------------------*/
+.count {
   font-size: 48px;
   font-weight: bold;
   color: #333;
-}
-
-#stats p {
-  font-size: 20px;
-  color: #777;
+  margin-bottom: 10px;
+  display: block;
 }
 
 

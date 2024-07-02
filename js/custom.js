@@ -107,8 +107,8 @@ jQuery(document).ready(function( $ ) {
       return false;
   });
 
-// Counting Effect
-function countUp() {
+  // Counting Effect
+  function countUp() {
     $('.count').each(function() {
       var $this = $(this),
         countTo = $this.attr('data-target');
@@ -117,7 +117,7 @@ function countUp() {
       }).animate({
         countNum: countTo
       }, {
-        duration: 3000,
+        duration: 7000,
         easing: 'swing',
         step: function() {
           $this.text(Math.floor(this.countNum));
@@ -140,4 +140,8 @@ function countUp() {
       $(window).off('scroll');
     }
   });
+
+  // Call countUp directly for immediate count on page load
+  countUp();
+
 });
