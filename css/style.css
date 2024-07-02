@@ -613,8 +613,11 @@ body.mobile-nav-active #mobile-nav-toggle i{
   font-size: 48px;
   font-weight: bold;
   color: #333;
-  margin-bottom: 10px;
   display: block;
+}
+
+#stats p {
+  color: #03c5ec;
 }
 
 
@@ -645,11 +648,11 @@ body.mobile-nav-active #mobile-nav-toggle i{
   font-size: 20px;
 }
 
-#supplies .service-item:hover .service-icon {
+#supplies .service-item .service-icon:hover {
   background: #fff;
 }
 
-#supplies .service-item:hover .service-icon i {
+#supplies .service-item .service-icon:hover i {
   color: #0077B6;
 }
 
