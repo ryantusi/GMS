@@ -691,8 +691,8 @@ body.mobile-nav-active #mobile-nav-toggle i{
 }
 
 #services .subscribe-btn-container {
-  text-align: center;
   padding-top: 20px;
+  margin-top: 8%;
 }
 
 #services .subscribe-btn {
