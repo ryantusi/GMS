@@ -60,13 +60,24 @@
     </div>
     <div class="hero-container">
       <div class="wow fadeIn">
-        <div class="hero-logo">
-          <img class="logo" src="img/gms/logo-t.png" alt="Imperial" width="350" height="150"/>
+        <div class="hero-logo" id="logo-bar">
+          <img class="logo" src="img/gms/logo1.jpg" alt="Imperial" width="330" height="100"/>
+          <!--<select id="languageDropdown" onchange="translatePage(this.value)">
+            <option value="en" selected>EN</option>
+            <option value="es">ES</option>
+            <option value="fr">FR</option>
+            <option value="de">DE</option>
+            <option value="it">IT</option>
+            <option value="ja">JA</option>
+            <option value="zh-CN">CH</option>
+          </select>-->
+        </div>
+        <div class="hero-mid">
+          <h1 id="hero-text">Worldwide<br>Ship Supplies <br>&<br> Services</h1>
         </div>
         <div class="actions">
-          <h2>We provide Worldwide Ship <span class="rotating">Supplies, Services</span></h2>
-          <a href="#about" class="btn-get-started">Get Started</a>
-          <a href="#contact" class="btn-services">Contact Now</a>
+          <!--<h1>Worldwide Ship <span class="rotating">Supplies, Services</span></h1>-->
+          <a href="#about" class="btn-services">Scroll Down<i class="fas fa-angle-double-down"></i></a>
         </div>
       </div>
     </div>
@@ -92,6 +103,23 @@
           <li class="menu-active"><a href="#hero">Home</a></li>
           <li><a href="#about">About Us</a></li>
           <li><a href="#services">Services</a></li>
+          <li class="menu-has-children"><a href="">Drop Down</a>
+            <ul>
+              <li><a href="#">Drop Down 1</a></li>
+              <li class="menu-has-children"><a href="#">Drop Down 2</a>
+                <ul>
+                  <li><a href="#">Deep Drop Down 1</a></li>
+                  <li><a href="#">Deep Drop Down 2</a></li>
+                  <li><a href="#">Deep Drop Down 3</a></li>
+                  <li><a href="#">Deep Drop Down 4</a></li>
+                  <li><a href="#">Deep Drop Down 5</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Drop Down 3</a></li>
+              <li><a href="#">Drop Down 4</a></li>
+              <li><a href="#">Drop Down 5</a></li>
+            </ul>
+          </li>
           <li><a href="#why">Why us?</a></li>
           <li><a href="#sectors">Sectors</a></li>
           <li><a href="#locations">Locations</a></li>
@@ -441,6 +469,39 @@
   </section>
 
   <!--==========================
+  Locations Section
+============================-->
+<section id="locations">
+  <div class="container wow fadeInUp">
+    <div class="row">
+      <div class="col-md-12">
+        <h3 class="section-title">Locations</h3>
+        <div class="section-title-divider"></div>
+        <p class="section-description">Explore our global locations</p>
+      </div>
+    </div>
+    <div class="container wow fadeInUp">
+      <canvas id="cobe" style="width: 500px; height: 500px;" width="1000" height="1000"></canvas>
+    </div>
+  
+    <!--<div class="container wow fadeInUp">
+      <div class="country-buttons">
+        <button class="country-btn" onclick="showCities('usa')">USA</button>
+        <button class="country-btn" onclick="showCities('uk')">UK</button>
+        <button class="country-btn" onclick="showCities('uae')">UAE</button>
+        <button class="country-btn" onclick="showCities('india')">India</button>
+        <button class="country-btn" onclick="showCities('china')">China</button>
+        <button class="country-btn" onclick="showCities('australia')">Australia</button>
+      </div>
+    </div>
+  
+    <div class="container wow fadeInUp">
+      <ul id="city-list" class="city-list"></ul>
+    </div>-->
+
+</section>
+
+  <!--==========================
   Contact Section
   ============================-->
   <section id="contact">
@@ -456,6 +517,9 @@
       <div class="row">
         <div class="col-md-3 col-md-push-2">
           <div class="info">
+            <div>
+              <img src="img/gms/logo-t.png" alt="logo" width="200" height="100" class="contact-logo" />
+            </div>
             <div>
               <i class="fa fa-map-marker"></i>
               <p>114 & 115, Commercial Bank of Dubai Building, 1st Floor, Sheikh Zayed Road<br>Al Quoz, Dubai - UAE</p>
@@ -492,7 +556,7 @@
                 <div class="validation"></div>
               </div>
               <div class="form-group">
-                <textarea class="form-control" name="message" rows="7" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+                <textarea class="form-control" name="message" rows="10" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
                 <div class="validation"></div>
               </div>
               <div class="text-center"><button type="submit">Send Message</button></div>
@@ -503,21 +567,6 @@
       </div>
     </div>
   </section>
-
-<!--==========================
-  Locations Section
-============================-->
-<section id="locations">
-  <div class="container wow fadeInUp">
-    <div class="row">
-      <div class="col-md-12">
-        <h3 class="section-title">Locations</h3>
-        <div class="section-title-divider"></div>
-        <p class="section-description">Explore our global locations</p>
-      </div>
-    </div>
-
-</section>
 
   <!--==========================
   Footer
@@ -561,7 +610,34 @@
 
   <script src="contactform/contactform.js"></script>
 
+  <script type="module">
+    import createGlobe from "https://cdn.skypack.dev/cobe";
 
+    let phi = 0;
+    let canvas = document.getElementById("cobe");
+
+    const globe = createGlobe(canvas, {
+      devicePixelRatio: 2,
+      width: 1000,
+      height: 1000,
+      phi: 0,
+      theta: 0,
+      dark: 0,
+      diffuse: 1.2,
+      scale: 1,
+      mapSamples: 30000,
+      mapBrightness: 6,
+      baseColor: [1, 1, 1],
+      markerColor: [0.0588, 0.2, 1],
+      glowColor: [1, 1, 1],
+      offset: [0, 0],
+      markers: [],
+      onRender: (state) => {
+        state.phi = phi;
+        phi += 0.01;
+      }
+    });
+  </script>
 </body>
 
 </html>
