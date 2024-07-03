@@ -609,6 +609,7 @@ body.mobile-nav-active #mobile-nav-toggle i{
 /* Counting Effect
 --------------------------------*/
 .count {
+  font-family: "Marcellus";
   font-size: 48px;
   font-weight: bold;
   color: #333;
@@ -657,7 +658,7 @@ body.mobile-nav-active #mobile-nav-toggle i{
 
 button.prev, button.next {
   position: absolute;
-  top: 35%;
+  top: 60px;
   transform: translateY(-50%);
   background-color: rgba(0, 0, 0, 0.2);
   color: white;
@@ -1014,13 +1015,13 @@ button.next {
   color: white;
   font-family: "Marcellus";
   font-weight: 700;
-  font-size: 18px; /* Adjusted font size */
+  font-size: 22px; /* Adjusted font size */
 }
 .square-flip h3 {
   color: white;
   font-family: "Raleways";
   font-weight: 500;
-  font-size: 14px; /* Adjusted font size */
+  font-size: 16px; /* Adjusted font size */
   line-height: 20px; /* Adjusted line height */
 }
 .flip-overlay {
