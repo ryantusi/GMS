@@ -61,19 +61,11 @@
     <div class="hero-container">
       <div class="wow fadeIn">
         <div class="hero-logo" id="logo-bar">
-          <img class="logo" src="img/gms/logo1.jpg" alt="Imperial" width="330" height="100"/>
-          <!--<select id="languageDropdown" onchange="translatePage(this.value)">
-            <option value="en" selected>EN</option>
-            <option value="es">ES</option>
-            <option value="fr">FR</option>
-            <option value="de">DE</option>
-            <option value="it">IT</option>
-            <option value="ja">JA</option>
-            <option value="zh-CN">CH</option>
-          </select>-->
+          <img class="logo" src="img/gms/logo.jpg" alt="GMS" width="230" height="120"/>
+          <img class="banner" src="/img/gms/badges.png" width="300" height="40"/>
         </div>
         <div class="hero-mid">
-          <h1 id="hero-text">Worldwide<br>Ship Supplies <br>&<br> Services</h1>
+          <h1 id="hero-text">Worldwide<br><br>Ship<br><br> Supplies & Services</h1>
         </div>
         <div class="actions">
           <!--<h1>Worldwide Ship <span class="rotating">Supplies, Services</span></h1>-->
@@ -170,6 +162,31 @@ About Section
       </div>
     </div>
   </div>
+</section>
+
+<section id="memberships">
+  <div class="container wow fadeInUp">
+    <div class="row">
+      <div class="col-md-12">
+        <h3 class="section-title">Our Memberships</h3>
+        <div class="section-title-divider"></div>
+        <p class="section-description">We are certified in every sector</p>
+      </div>
+    </div>
+    <div class="slider-container">
+      <div class="slider">
+          <div class="slide"><img src="img/gms/mem1.jpg" alt="Image 1"></div>
+          <div class="slide"><img src="img/gms/mem2.jpg" alt="Image 2"></div>
+          <div class="slide"><img src="img/gms/mem3.jpg" alt="Image 3"></div>
+          <div class="slide"><img src="img/gms/mem4.png" alt="Image 4"></div>
+          <div class="slide"><img src="img/gms/mem5.jpg" alt="Image 5"></div>
+          <div class="slide"><img src="img/gms/mem6.jpg" alt="Image 6"></div>
+      </div>
+      <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+      <button class="next" onclick="moveSlide(1)">&#10095;</button>
+  </div>
+  </div>
+
 </section>
 
 
@@ -634,6 +651,55 @@ About Section
         phi += 0.01;
       }
     });
+  </script>
+  <script>
+    let slideIndex = 0;
+    const slides = document.querySelectorAll('.slide');
+    const slideCount = slides.length;
+    const slidesToShow = 5;
+    const slideWidth = slides[0].clientWidth;
+
+    function cloneSlides() {
+    const slider = document.querySelector('.slider');
+    for (let i = 0; i <= slidesToShow; i++) {
+      slider.appendChild(slides[i].cloneNode(true)); // Clone first 5 slides to the end
+    }
+    }
+
+    function showSlides() {
+    const totalSlides = document.querySelectorAll('.slide').length;
+    const slider = document.querySelector('.slider');
+
+    // Wrap around
+    if (slideIndex >= totalSlides - slidesToShow) {
+      slider.style.transition = 'none';
+      slideIndex = slideCount - slidesToShow;
+      slider.style.transform = `translateX(${-slideIndex * slideWidth}px)`;
+      slider.style.transition = 'transform 0.5s ease'; // Set transition back immediately
+      slideIndex++;
+      slider.style.transform = `translateX(${-slideIndex * slideWidth}px)`;
+    } else {
+      slider.style.transform = `translateX(${-slideIndex * slideWidth}px)`;
+    }
+    }
+
+    function moveSlide(n) {
+    slideIndex += n;
+    showSlides();
+    }
+
+    // Clone slides to create continuous effect
+    cloneSlides();
+
+    // Automatic slideshow
+    setInterval(() => {
+    moveSlide(1);
+    }, 3000); // Change slide every 3 seconds
+
+    // Initial call to showSlides
+    showSlides();
+
+
   </script>
 </body>
 
