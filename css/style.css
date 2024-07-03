@@ -915,10 +915,46 @@ button.next {
   margin-bottom: 15px;
   overflow: hidden;
   height: 260px;
+  position: relative;
 }
 
 #sectors .member .pic img {
   max-width: 100%;
+  transition: transform 0.3s ease;
+}
+
+#sectors .member .pic:hover img {
+  transform: scale(1.2);
+}
+
+#sectors .member .pic-text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: transparent;
+  color: #fff;
+  padding: 8px 0;
+  transform: translateY(100%);
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  opacity: 0;
+}
+
+#sectors .member .pic:hover .pic-text {
+  transform: translateY(0%);
+  opacity: 1;
+}
+
+#sectors .member h4 {
+  font-weight: 700;
+  margin-bottom: 2px;
+  color: #333;
+}
+
+#sectors .member span {
+  font-style: italic;
+  display: block;
+  font-size: 13px;
 }
 
 #sectors .member h4 {
