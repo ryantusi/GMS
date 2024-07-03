@@ -1257,7 +1257,7 @@ button.next {
 --------------------------------------------------------------*/
 #footer {
   position: relative;
-  height: 150px;
+  height: 100px;
   background: #015871;
   color: #fff;
   overflow: hidden;
@@ -1271,7 +1271,7 @@ button.next {
 }
 
 .ocean { 
-  height: 100px;
+  height: 80px;
   width: 100%;
   position: absolute;
   bottom: 0;
@@ -1312,6 +1312,7 @@ button.next {
     transform: translate3d(0, 5px, 0);
   }
 }
+
 
 
 /* Locations Section */
