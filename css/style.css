@@ -924,8 +924,8 @@ button.next {
   transform-style: preserve-3d;
   position: relative;
   float: left;
-  margin: 10px; /* reduced margin */
-  width: calc(25% - 20px); /* 25% width for each card with margin */
+  /* reduced margin */
+  width: calc(25%); /* 25% width for each card with margin */
   height: 300px; /* reduced height */
   overflow: hidden;
 }
