@@ -144,6 +144,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #hero .actions {
   margin-bottom: 20px;
+  transition: transform 0.3s ease-in-out;
 }
 
 #hero .actions .btn-get-started, 
@@ -219,7 +220,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .actions:hover {
   transform: scale(1.2);
-  transition: transform 0.3s ease-in-out;
 }
 
 /*#google_translate_element {
