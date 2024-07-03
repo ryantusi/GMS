@@ -273,11 +273,12 @@ h1, h2, h3, h4, h5, h6 {
 #header {
   background: #fcfcfc;
   padding: 20px 0;
-  height: 90px;
+  height: 100px;
 }
 
 #header #logo {
   float: left;
+  margin-left: -20px;
 }
 
 #header #logo h1 {
@@ -397,11 +398,11 @@ h1, h2, h3, h4, h5, h6 {
   color: #000;
   font-family: 'Marcellus', sans-serif;
   font-weight: 300;
-  font-size: 14px;
+  font-size: 16px;
   outline: none;
 }
 
-.nav-menu a:hover, .nav-menu li:hover > a, .nav-menu .menu-active > a {
+.nav-menu a:hover, .nav-menu li:hover > a {
   color: #0077B6;
 }
 
