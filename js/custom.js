@@ -117,7 +117,7 @@ jQuery(document).ready(function( $ ) {
       }).animate({
         countNum: countTo
       }, {
-        duration: 7000,
+        duration: 3000,
         easing: 'swing',
         step: function() {
           $this.text(Math.floor(this.countNum));
