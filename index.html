@@ -8,20 +8,6 @@
   <meta content="" name="keywords">
   <meta content="" name="description">
 
-  <!-- Facebook Opengraph integration: https://developers.facebook.com/docs/sharing/opengraph -->
-  <meta property="og:title" content="">
-  <meta property="og:image" content="">
-  <meta property="og:url" content="">
-  <meta property="og:site_name" content="">
-  <meta property="og:description" content="">
-
-  <!-- Twitter Cards integration: https://dev.twitter.com/cards/  -->
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:site" content="">
-  <meta name="twitter:title" content="">
-  <meta name="twitter:description" content="">
-  <meta name="twitter:image" content="">
-
   <!-- Place your favicon.ico and apple-touch-icon.png in the template root directory -->
   <link href="img/gms/logo2.jpg" rel="shortcut icon">
 
@@ -38,6 +24,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
   <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
   <link href="lib/animate-css/animate.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
 
   <!-- Main Stylesheet File -->
   <link href="css/style.css" rel="stylesheet">
@@ -189,20 +177,15 @@ About Section
         <p class="section-description">We are certified in every sector</p>
       </div>
     </div>
-    <div class="slider-container">
-      <div class="slider">
-          <div class="slide"><img src="img/gms/mem1.jpg" alt="Image 1"></div>
-          <div class="slide"><img src="img/gms/mem2.jpg" alt="Image 2"></div>
-          <div class="slide"><img src="img/gms/mem3.jpg" alt="Image 3"></div>
-          <div class="slide"><img src="img/gms/mem4.png" alt="Image 4"></div>
-          <div class="slide"><img src="img/gms/mem5.jpg" alt="Image 5"></div>
-          <div class="slide"><img src="img/gms/mem6.jpg" alt="Image 6"></div>
-      </div>
-      <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
-      <button class="next" onclick="moveSlide(1)">&#10095;</button>
+    <div class="customer-logos slider">
+      <div class="slide"><img src="img/gms/mem1.jpg" alt="Image 1"></div>
+      <div class="slide"><img src="img/gms/mem2.jpg" alt="Image 2"></div>
+      <div class="slide"><img src="img/gms/mem3.jpg" alt="Image 3"></div>
+      <div class="slide"><img src="img/gms/mem4.png" alt="Image 4"></div>
+      <div class="slide"><img src="img/gms/mem5.jpg" alt="Image 5"></div>
+      <div class="slide"><img src="img/gms/mem6.jpg" alt="Image 6"></div>
+    </div>
   </div>
-  </div>
-
 </section>
 
 
@@ -394,13 +377,13 @@ About Section
       </div>
 
       <div class="square-flip">
-        <div class="square" data-image="img/gms/ship1.jpg">
+        <div class="square" data-image="img/gms/why1.jpg">
             <div class="flip-overlay"></div>
             <div class="square-container">
                 <h2 class="textshadow">Uncompromised<br> Quality</h2>
             </div>
         </div>
-        <div class="square2" data-image="img/gms/ship1.jpg">
+        <div class="square2" data-image="img/gms/why1.jpg">
             <div class="flip-overlay" ></div>
             <div class="square-container2">
                 <h3 class="textshadow">Committed to sourcing and serving only the best quality stores for complete vessel satisfaction and reliability. </h3>
@@ -409,13 +392,13 @@ About Section
         </div>
       </div>
       <div class="square-flip">
-          <div class="square" data-image="img/gms/ship2.jpg">
+          <div class="square" data-image="img/gms/why2.jpg">
               <div class="flip-overlay"></div>
               <div class="square-container">
                 <h2 class="textshadow">24/7 Availability<br> & Support</h2>
               </div>
           </div>
-          <div class="square2" data-image="img/gms/ship2.jpg">
+          <div class="square2" data-image="img/gms/why2.jpg">
               <div class="flip-overlay"></div>
               <div class="square-container2">
                 <h3 class="textshadow">We are available round the clock, any day of the year with 24x7 support for all your enquiries, concerns and assistance.</h3>
@@ -424,13 +407,13 @@ About Section
           </div>
       </div>
       <div class="square-flip">
-          <div class="square" data-image="img/gms/ship3.jpg">
+          <div class="square" data-image="img/gms/why3.jpg">
               <div class="flip-overlay"></div>
               <div class="square-container">
                 <h2 class="textshadow">Competitive<br> Prices</h2>
               </div>
           </div>
-          <div class="square2" data-image="img/gms/ship3.jpg">
+          <div class="square2" data-image="img/gms/why3.jpg">
               <div class="flip-overlay"></div>
               <div class="square-container2">
                 <h3 class="textshadow">We ensure to give the best and competitive prices for our services and store enquiries compared to others - at the same time, Ensure no compromise on the quality is ever made.</h3>
@@ -439,13 +422,13 @@ About Section
           </div>
       </div>
       <div class="square-flip">
-          <div class="square" data-image="img/gms/ship4.jpg">
+          <div class="square" data-image="img/gms/why4.jpg">
               <div class="flip-overlay"></div>
               <div class="square-container">
                 <h2 class="textshadow">Unbiased Global<br> Network</h2>
               </div>
           </div>
-          <div class="square2" data-image="img/gms/ship4.jpg">
+          <div class="square2" data-image="img/gms/why4.jpg">
               <div class="flip-overlay"></div>
               <div class="square-container2">
                 <h3 class="textshadow">With our offices in various parts of the globe, our clients rely on us for our quality supplies at any seaports.</h3>
@@ -474,9 +457,10 @@ About Section
           <div class="member">
             <div class="pic">
               <img src="img/gms/ship1.jpg" alt="">
-              <div class="pic-text">1000+ Vessels Served Worldwide</div>
+              <div class="pic-text"></div>
             </div>
             <h4>Commercial</h4>
+            <p>1000+ Vessels Served Worldwide</p>
           </div>
         </div>
   
@@ -484,9 +468,10 @@ About Section
           <div class="member">
             <div class="pic">
               <img src="img/gms/ship2.jpg" alt="">
-              <div class="pic-text">100+ Cruises Served Worldwide</div>
+              <div class="pic-text"></div>
             </div>
             <h4>Passenger</h4>
+            <p>100+ Cruises Served Worldwide</p>
           </div>
         </div>
   
@@ -494,9 +479,10 @@ About Section
           <div class="member">
             <div class="pic">
               <img src="img/gms/ship3.jpg" alt="">
-              <div class="pic-text">500+ Tugs Served Worldwide</div>
+              <div class="pic-text"></div>
             </div>
             <h4>Tug</h4>
+            <p>500+ Tugs Served Worldwide</p>
           </div>
         </div>
   
@@ -504,9 +490,10 @@ About Section
           <div class="member">
             <div class="pic">
               <img src="img/gms/ship4.jpg" alt="">
-              <div class="pic-text">25+ Navy Vessels Served Worldwide</div>
+              <div class="pic-text"></div>
             </div>
             <h4>Navy</h4>
+            <p>25+ Navy Vessels Served Worldwide</p>
           </div>
         </div>
   
@@ -535,108 +522,111 @@ About Section
     <div class="right-container">
       <!-- This is mtree list -->
       <ul class="mtree mtree-transition">
-        <li class="mtree-node mtree-closed"><a href="#">Africa</a>
+        <li class="mtree-node mtree-closed"><a href="">Asia</a>
           <ul>
-            <li><a href="#">Algeria</a></li>
-            <li><a href="#">Marocco</a></li>
-            <li><a href="#">Libya</a></li>
-            <li><a href="#">Somalia</a></li>
-            <li><a href="#">Kenya</a></li>
-            <li><a href="#">Mauritania</a></li>
-            <li><a href="#">South Africa</a></li>
+            <li><a href="#contact">Bahrain</a></li>
+            <li><a href="#contact">Bangladesh</a></li>
+            <li><a href="#contact">Brunei</a></li>
+            <li><a href="#contact">China</a></li>
+            <li><a href="#contact">Hong Kong</a></li>
+            <li><a href="#contact">India</a></li>
+            <li><a href="#contact">Indonesia</a></li>
+            <li><a href="#contact">Iran</a></li>
+            <li><a href="#contact">Iraq</a></li>
+            <li><a href="#contact">Japan</a></li>
+            <li><a href="#contact">Jordan</a></li>
+            <li><a href="#contact">Kuwait</a></li>
+            <li><a href="#contact">Lebanon</a></li>
+            <li><a href="#contact">Malaysia</a></li>
+            <li><a href="#contact">Maldives</a></li>
+            <li><a href="#contact">Malta</a></li>
+            <li><a href="#contact">Mauritius</a></li>
+            <li><a href="#contact">Myanmar</a></li>
+            <li><a href="#contact">Oman</a></li>
+            <li><a href="#contact">Pakistan</a></li>
+            <li><a href="#contact">Philippines</a></li>
+            <li><a href="#contact">Qatar</a></li>
+            <li><a href="#contact">Saudi Arabia</a></li>
+            <li><a href="#contact">Singapore</a></li>
+            <li><a href="#contact">South Korea</a></li>
+            <li><a href="#contact">Sri Lanka</a></li>
+            <li><a href="#contact">Taiwan</a></li>
+            <li><a href="#contact">Thailand</a></li>
+            <li><a href="#contact">Turkey</a></li>
+            <li><a href="#contact">United Arab Emirates</a></li>
+            <li><a href="#contact">Vietnam</a></li>
+            <li><a href="#contact">Yemen</a></li>
           </ul>
         </li>
-        <li class="mtree-node mtree-closed"><a href="#">America</a>
+
+        <li class="mtree-node mtree-closed"><a href="">Europe</a>
           <ul>
-            <li class="mtree-node mtree-closed"><a href="#">North-America</a>
-              <ul>
-                <li><a href="#">Canada</a></li>
-                <li class="mtree-node mtree-closed"><a href="#">USA</a>
-                  <ul>
-                    <li><a href="#">New York</a></li>
-                    <li class="mtree-node mtree-closed"><a href="#">California</a>
-                      <ul>
-                        <li><a href="#">Los Angeles</a></li>
-                        <li><a href="#">San Diego</a></li>
-                        <li><a href="#">Sacramento</a></li>
-                        <li><a href="#">San Francisco</a></li>
-                        <li><a href="#">Bakersville</a></li>
-                      </ul>
-                    </li>
-                    <li><a href="#">Lousiana</a></li>
-                    <li><a href="#">Texas</a></li>
-                    <li><a href="#">Nevada</a></li>
-                    <li><a href="#">Montana</a></li>
-                    <li><a href="#">Virginia</a></li>
-                  </ul>
-                </li>
-              </ul>
-            </li>
-            <li class="mtree-node mtree-closed"><a href="#">Middle-America</a>
-              <ul>
-                <li><a href="#">Mexico</a></li>
-                <li><a href="#">Honduras</a></li>
-                <li><a href="#">Guatemala</a></li>
-              </ul>
-            </li>
-            <li class="mtree-node mtree-closed"><a href="#">South-America</a>
-              <ul>
-                <li><a href="#">Brazil</a></li>
-                <li><a href="#">Argentina</a></li>
-                <li><a href="#">Uruguay</a></li>
-                <li><a href="#">Chile</a></li>
-              </ul>
-            </li>
+            <li><a href="#contact">Belgium</a></li>
+            <li><a href="#contact">Bulgaria</a></li>
+            <li><a href="#contact">Croatia</a></li>
+            <li><a href="#contact">Cyprus</a></li>
+            <li><a href="#contact">Denmark</a></li>
+            <li><a href="#contact">Estonia</a></li>
+            <li><a href="#contact">France</a></li>
+            <li><a href="#contact">Germany</a></li>
+            <li><a href="#contact">Gibraltar</a></li>
+            <li><a href="#contact">Ireland</a></li>
+            <li><a href="#contact">Italy</a></li>
+            <li><a href="#contact">Netherlands</a></li>
+            <li><a href="#contact">Norway</a></li>
+            <li><a href="#contact">Portugal</a></li>
+            <li><a href="#contact">Romania</a></li>
+            <li><a href="#contact">Spain</a></li>
+            <li><a href="#contact">United Kingdom</a></li>
           </ul>
         </li>
-        <li class="mtree-node mtree-closed"><a href="#">Asia</a>
+
+        <li class="mtree-node mtree-closed"><a href="">America</a>
           <ul>
-            <li><a href="#">China</a></li>
-            <li><a href="#">India</a></li>
-            <li><a href="#">Malaysia</a></li>
-            <li><a href="#">Thailand</a></li>
-            <li><a href="#">Vietnam</a></li>
-            <li><a href="#">Singapore</a></li>
-            <li><a href="#">Indonesia</a></li>
-            <li><a href="#">Mongolia</a></li>
-          </ul>
-        </li>
-        <li class="mtree-node mtree-closed"><a href="#">Europe</a>
-          <ul>
-            <li class="mtree-node mtree-closed"><a href="#">North</a>
+            <li class="mtree-node mtree-closed"><a href="">North-America</a>
               <ul>
-                <li><a href="#">Norway</a></li>
-                <li><a href="#">Sweden</a></li>
-                <li><a href="#">Finland</a></li>
+                <li><a href="#contact">The Bahamas</a></li>
+                <li><a href="#contact">Canada</a></li>
+                <li><a href="#contact">Cuba</a></li>
+                <li><a href="#contact">Guatemala</a></li>
+                <li><a href="#contact">Haiti</a></li>
+                <li><a href="#contact">Honduras</a></li>
+                <li><a href="#contact">Mexico</a></li>
+                <li><a href="#contact">Panama</a></li>
+                <li><a href="#contact">United States</a></li>
               </ul>
             </li>
-            <li class="mtree-node mtree-closed"><a href="#">East</a>
+            <li class="mtree-node mtree-closed"><a href="">South-America</a>
               <ul>
-                <li><a href="#">Romania</a></li>
-                <li><a href="#">Bulgaria</a></li>
-                <li><a href="#">Poland</a></li>
-              </ul>
-            </li>
-            <li class="mtree-node mtree-closed"><a href="#">South</a>
-              <ul>
-                <li><a href="#">Italy</a></li>
-                <li><a href="#">Greece</a></li>
-                <li><a href="#">Spain</a></li>
-              </ul>
-            </li>
-            <li class="mtree-node mtree-closed"><a href="#">West</a>
-              <ul>
-                <li><a href="#">Germany</a></li>
-                <li><a href="#">France</a></li>
-                <li><a href="#">England</a></li>
+                <li><a href="#contact">Argentina</a></li>
+                <li><a href="#contact">Brazil</a></li>
+                <li><a href="#contact">Chile</a></li>
+                <li><a href="#contact">Colombia</a></li>
+                <li><a href="#contact">Ecuador</a></li>
+                <li><a href="#contact">Peru</a></li>
+                <li><a href="#contact">Uruguay</a></li>
+                <li><a href="#contact">Venezuela</a></li>
               </ul>
             </li>
           </ul>
         </li>
-        <li class="mtree-node mtree-closed"><a href="#">Oceania</a>
+
+        <li class="mtree-node mtree-closed"><a href="">Africa</a>
           <ul>
-            <li><a href="#">Australia</a></li>
-            <li><a href="#">New-Zealand</a></li>
+            <li><a href="#contact">Djibouti</a></li>
+            <li><a href="#contact">Egypt</a></li>
+            <li><a href="#contact">Gabon</a></li>
+            <li><a href="#contact">Kenya</a></li>
+            <li><a href="#contact">Libya</a></li>
+            <li><a href="#contact">Morocco</a></li>
+            <li><a href="#contact">South Africa</a></li>
+          </ul>
+        </li>
+        
+        <li class="mtree-node mtree-closed"><a href="">Oceania</a>
+          <ul>
+            <li><a href="#contact">Australia</a></li>
+            <li><a href="#contact">New Zealand</a></li>
           </ul>
         </li>
       </ul>
@@ -663,7 +653,7 @@ About Section
         <div class="col-md-3 col-md-push-2">
           <div class="info">
             <div>
-              <img src="img/gms/logo-t.png" alt="logo" width="200" height="100" class="contact-logo" />
+              <img src="img/gms/logo3.jpg" alt="logo" width="215" height="150" class="contact-logo" />
             </div>
             <div>
               <i class="fa fa-map-marker"></i>
@@ -672,12 +662,12 @@ About Section
 
             <div>
               <i class="fa fa-envelope"></i>
-              <p>info@globalmarinesupplies.com <br> info@globalmarinesupplies.ae</p>
+              <p><a href="mailto:info@globalmarinesupplies.com">info@globalmarinesupplies.com</a> <br> <a href="mailto:info@globalmarinesupplies.ae">info@globalmarinesupplies.ae</a></p>
             </div>
 
             <div>
               <i class="fa fa-phone"></i>
-              <p>+971 506990095 <br> +971 508834050</p>
+              <p><a href="tel:+971 506990095">+971 506990095</a> <br> <a href="tel:+971 508834050">+971 508834050</a></p>
             </div>
 
           </div>
@@ -750,9 +740,34 @@ About Section
 
   <!-- Template Specisifc Custom Javascript File -->
   <script src="js/custom.js"></script>
-
   <script src="contactform/contactform.js"></script>
 
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+  <script>
+    $(document).ready(function(){
+      $('.customer-logos').slick({
+          slidesToShow: 5,
+          slidesToScroll: 1,
+          autoplay: true,
+          autoplaySpeed: 1500,
+          arrows: false,
+          dots: false,
+          pauseOnHover: false,
+          responsive: [{
+              breakpoint: 768,
+              settings: {
+                  slidesToShow: 4
+              }
+          }, {
+              breakpoint: 520,
+              settings: {
+                  slidesToShow: 3
+              }
+          }]
+      });
+    });
+  </script>
   <script type="module">
     import createGlobe from "https://cdn.skypack.dev/cobe";
 
@@ -780,55 +795,6 @@ About Section
         phi += 0.01;
       }
     });
-  </script>
-  <script>
-    let slideIndex = 0;
-    const slides = document.querySelectorAll('.slide');
-    const slideCount = slides.length;
-    const slidesToShow = 5;
-    const slideWidth = slides[0].clientWidth;
-
-    function cloneSlides() {
-    const slider = document.querySelector('.slider');
-    for (let i = 0; i <= slidesToShow; i++) {
-      slider.appendChild(slides[i].cloneNode(true)); // Clone first 5 slides to the end
-    }
-    }
-
-    function showSlides() {
-    const totalSlides = document.querySelectorAll('.slide').length;
-    const slider = document.querySelector('.slider');
-
-    // Wrap around
-    if (slideIndex >= totalSlides - slidesToShow) {
-      slider.style.transition = 'none';
-      slideIndex = slideCount - slidesToShow;
-      slider.style.transform = `translateX(${-slideIndex * slideWidth}px)`;
-      slider.style.transition = 'transform 0.5s ease'; // Set transition back immediately
-      slideIndex++;
-      slider.style.transform = `translateX(${-slideIndex * slideWidth}px)`;
-    } else {
-      slider.style.transform = `translateX(${-slideIndex * slideWidth}px)`;
-    }
-    }
-
-    function moveSlide(n) {
-    slideIndex += n;
-    showSlides();
-    }
-
-    // Clone slides to create continuous effect
-    cloneSlides();
-
-    // Automatic slideshow
-    setInterval(() => {
-    moveSlide(1);
-    }, 3000); // Change slide every 3 seconds
-
-    // Initial call to showSlides
-    showSlides();
-
-
   </script>
   <script>
     // mtree.js
