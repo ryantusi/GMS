@@ -24,6 +24,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
   <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
   <link href="lib/animate-css/animate.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
 
   <!-- Main Stylesheet File -->
   <link href="css/style.css" rel="stylesheet">
@@ -175,20 +177,15 @@ About Section
         <p class="section-description">We are certified in every sector</p>
       </div>
     </div>
-    <div class="slider-container">
-      <div class="slider">
-          <div class="slide"><img src="img/gms/mem1.jpg" alt="Image 1"></div>
-          <div class="slide"><img src="img/gms/mem2.jpg" alt="Image 2"></div>
-          <div class="slide"><img src="img/gms/mem3.jpg" alt="Image 3"></div>
-          <div class="slide"><img src="img/gms/mem4.png" alt="Image 4"></div>
-          <div class="slide"><img src="img/gms/mem5.jpg" alt="Image 5"></div>
-          <div class="slide"><img src="img/gms/mem6.jpg" alt="Image 6"></div>
-      </div>
-      <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
-      <button class="next" onclick="moveSlide(1)">&#10095;</button>
+    <div class="customer-logos slider">
+      <div class="slide"><img src="img/gms/mem1.jpg" alt="Image 1"></div>
+      <div class="slide"><img src="img/gms/mem2.jpg" alt="Image 2"></div>
+      <div class="slide"><img src="img/gms/mem3.jpg" alt="Image 3"></div>
+      <div class="slide"><img src="img/gms/mem4.png" alt="Image 4"></div>
+      <div class="slide"><img src="img/gms/mem5.jpg" alt="Image 5"></div>
+      <div class="slide"><img src="img/gms/mem6.jpg" alt="Image 6"></div>
+    </div>
   </div>
-  </div>
-
 </section>
 
 
@@ -743,9 +740,34 @@ About Section
 
   <!-- Template Specisifc Custom Javascript File -->
   <script src="js/custom.js"></script>
-
   <script src="contactform/contactform.js"></script>
 
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+  <script>
+    $(document).ready(function(){
+      $('.customer-logos').slick({
+          slidesToShow: 5,
+          slidesToScroll: 1,
+          autoplay: true,
+          autoplaySpeed: 1500,
+          arrows: false,
+          dots: false,
+          pauseOnHover: false,
+          responsive: [{
+              breakpoint: 768,
+              settings: {
+                  slidesToShow: 4
+              }
+          }, {
+              breakpoint: 520,
+              settings: {
+                  slidesToShow: 3
+              }
+          }]
+      });
+    });
+  </script>
   <script type="module">
     import createGlobe from "https://cdn.skypack.dev/cobe";
 
@@ -773,55 +795,6 @@ About Section
         phi += 0.01;
       }
     });
-  </script>
-  <script>
-    let slideIndex = 0;
-    const slides = document.querySelectorAll('.slide');
-    const slideCount = slides.length;
-    const slidesToShow = 5;
-    const slideWidth = slides[0].clientWidth;
-
-    function cloneSlides() {
-    const slider = document.querySelector('.slider');
-    for (let i = 0; i <= slidesToShow; i++) {
-      slider.appendChild(slides[i].cloneNode(true)); // Clone first 5 slides to the end
-    }
-    }
-
-    function showSlides() {
-    const totalSlides = document.querySelectorAll('.slide').length;
-    const slider = document.querySelector('.slider');
-
-    // Wrap around
-    if (slideIndex >= totalSlides - slidesToShow) {
-      slider.style.transition = 'none';
-      slideIndex = slideCount - slidesToShow;
-      slider.style.transform = `translateX(${-slideIndex * slideWidth}px)`;
-      slider.style.transition = 'transform 0.5s ease'; // Set transition back immediately
-      slideIndex++;
-      slider.style.transform = `translateX(${-slideIndex * slideWidth}px)`;
-    } else {
-      slider.style.transform = `translateX(${-slideIndex * slideWidth}px)`;
-    }
-    }
-
-    function moveSlide(n) {
-    slideIndex += n;
-    showSlides();
-    }
-
-    // Clone slides to create continuous effect
-    cloneSlides();
-
-    // Automatic slideshow
-    setInterval(() => {
-    moveSlide(1);
-    }, 3000); // Change slide every 3 seconds
-
-    // Initial call to showSlides
-    showSlides();
-
-
   </script>
   <script>
     // mtree.js
