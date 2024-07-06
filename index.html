@@ -532,7 +532,7 @@ About Section
 
   <div class="location-container">
     <div class="left-container">
-        <canvas id="cobe" style="width: 500px; height: 500px;" width="1000" height="1000"></canvas>
+        <canvas id="cobe" style="width: 500px; height: 500px;" width="1000" height="1000" title="Worldwide Locations"></canvas>
     </div>
     <div class="right-container">
       <!-- This is mtree list -->
@@ -807,7 +807,9 @@ About Section
       markerColor: [0.0588, 0.2, 1],
       glowColor: [1, 1, 1],
       offset: [0, 0],
-      markers: [],
+      markers: [
+          { location: [23.4241, 53.8478], size: 0.1 },  // United Arab Emirates
+      ],
       onRender: (state) => {
         state.phi = phi;
         phi += 0.01;
