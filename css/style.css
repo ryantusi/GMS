@@ -231,7 +231,7 @@ h1, h2, h3, h4, h5, h6 {
   background: transparent;
   border: 2px solid #fff;
   color: #fff;
-  font-size: 16px;
+  font-size: 17px;
   width: 25%;
   font-family: "Marcellus";
 }
@@ -283,7 +283,7 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   flex-direction: column;
   position: relative;
-  transform: translateX(60%) translateY(5%);
+  transform: translateX(55%) translateY(5%);
 }
 
 .dblh__title-wrapper {
@@ -293,7 +293,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .dblh__title {
-  font-size: 6rem;
+  font-size: 6.5rem;
   margin-bottom: 3rem;
   font-family: "Marcellus";
   text-transform: none;
@@ -301,7 +301,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .dblh__content {
   position: absolute;
-  top: 9rem; /* Adjust based on the exact position of dblh__title-2 */
+  top: 8rem; /* Adjust based on the exact position of dblh__title-2 */
   left: 15rem; /* Adjust to align with the second line */
   text-align: left !important;
 }
@@ -317,7 +317,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 1.5rem;
   margin: 0;
   padding: 0;
-  line-height: 1.4rem;
+  line-height: 2.2rem;
 }
 
 #hero-text {
@@ -663,10 +663,23 @@ body.mobile-nav-active #mobile-nav-toggle i{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  margin-top: 40px; /* Ensure there is enough space to trigger the scroll event */
 }
 
-/* Counting Effect
+/* Stats Section
 --------------------------------*/
+#stats {
+  background: #fff;
+  padding-bottom: 80px;
+  margin: 0 10% 0 15%;
+}
+
+.stats-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
 .count {
   font-family: "Marcellus";
   font-size: 48px;
@@ -1224,53 +1237,29 @@ body.mobile-nav-active #mobile-nav-toggle i{
   line-height: 20px;
 }
 
-#contact .form #sendmessage {
-  color: #0077B6;
-  border: 1px solid #0077B6;
-  display: none;
-  text-align: center;
-  padding: 15px;
-  font-weight: 600;
-  margin-bottom: 15px;
+#contact .info p a {
+  color: #000;
+  transition: color 0.3s ease;
 }
 
-#contact .form #errormessage {
-  color: red;
-  display: none;
-  border: 1px solid red;
-  text-align: center;
-  padding: 15px;
-  font-weight: 600;
-  margin-bottom: 15px;
+#contact .info p a:hover {
+  color: #03c5ec;
 }
 
-#contact .form #sendmessage.show, #contact .form #errormessage.show, #contact .form .show {
-  display: block;
+#contact .video-container2 {
+  position: relative;
+  overflow: hidden;
+  padding-top: 56.25%; /* 4:3 Aspect Ratio (Responsive) */
 }
 
-#contact .form .validation {
-  color: red;
-  display: none;
-  margin: 0 0 20px;
-  font-weight: 400;
-  font-size: 13px;
-}
-
-#contact .form input, #contact .form textarea {
-  border-radius: 0;
-  box-shadow: none;
-}
-
-#contact .form button[type="submit"] {
-  background: #0077B6;
-  border: 0;
-  padding: 10px 24px;
-  color: #fff;
-  transition: 0.4s;
-}
-
-#contact .form button[type="submit"]:hover {
-  background: #25d8fc;
+#contact .video-container2 video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scale(1.1);
 }
 
 .contact-logo {
@@ -1293,6 +1282,15 @@ body.mobile-nav-active #mobile-nav-toggle i{
   bottom: 10px;
   width: 100%;
   text-align: center;
+}
+
+.image-container {
+  text-align: center; /* Space between image and text */
+}
+
+.image-container img {
+  width: 50%;
+  height: auto;
 }
 
 .ocean { 
