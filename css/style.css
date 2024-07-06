@@ -231,7 +231,7 @@ h1, h2, h3, h4, h5, h6 {
   background: transparent;
   border: 2px solid #fff;
   color: #fff;
-  font-size: 16px;
+  font-size: 17px;
   width: 25%;
   font-family: "Marcellus";
 }
@@ -283,7 +283,7 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   flex-direction: column;
   position: relative;
-  transform: translateX(60%) translateY(5%);
+  transform: translateX(55%) translateY(5%);
 }
 
 .dblh__title-wrapper {
@@ -293,7 +293,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .dblh__title {
-  font-size: 6rem;
+  font-size: 6.5rem;
   margin-bottom: 3rem;
   font-family: "Marcellus";
   text-transform: none;
@@ -301,7 +301,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .dblh__content {
   position: absolute;
-  top: 9rem; /* Adjust based on the exact position of dblh__title-2 */
+  top: 8rem; /* Adjust based on the exact position of dblh__title-2 */
   left: 15rem; /* Adjust to align with the second line */
   text-align: left !important;
 }
@@ -317,7 +317,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 1.5rem;
   margin: 0;
   padding: 0;
-  line-height: 1.4rem;
+  line-height: 2.2rem;
 }
 
 #hero-text {
@@ -663,10 +663,23 @@ body.mobile-nav-active #mobile-nav-toggle i{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  margin-top: 40px; /* Ensure there is enough space to trigger the scroll event */
 }
 
-/* Counting Effect
+/* Stats Section
 --------------------------------*/
+#stats {
+  background: #fff;
+  padding-bottom: 80px;
+  margin: 0 10% 0 15%;
+}
+
+.stats-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
 .count {
   font-family: "Marcellus";
   font-size: 48px;

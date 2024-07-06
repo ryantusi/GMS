@@ -116,33 +116,31 @@ jQuery(document).ready(function( $ ) {
         countNum: $this.text()
       }).animate({
         countNum: countTo
-      }, {
-        duration: 3000,
+      },
+      {
+        duration: 2000,
         easing: 'swing',
         step: function() {
-          $this.text(Math.floor(this.countNum));
+          $this.text(Math.floor(this.countNum) + '+');
         },
         complete: function() {
-          $this.text(this.countNum);
+          $this.text(this.countNum + '+');
         }
       });
     });
   }
 
-  // Trigger the counting effect when the section is in view
+  // Trigger the counting effect when the #stats section is in view
   $(window).on('scroll', function() {
-    var hT = $('#stats').offset().top,
-      hH = $('#stats').outerHeight(),
+    var hT = $('#about').offset().top,
+      hH = $('#about').outerHeight(),
       wH = $(window).height(),
       wS = $(this).scrollTop();
-    if (wS > (hT + hH - wH)) {
+    if (wS >= (hT + hH - wH)) {
       countUp();
       $(window).off('scroll');
     }
   });
-
-  // Call countUp directly for immediate count on page load
-  countUp();
 
   //Count nr. of square classes
   var countSquare = $('.square').length;
