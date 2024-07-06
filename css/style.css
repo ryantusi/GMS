@@ -1284,6 +1284,15 @@ body.mobile-nav-active #mobile-nav-toggle i{
   text-align: center;
 }
 
+.image-container {
+  text-align: center; /* Space between image and text */
+}
+
+.image-container img {
+  width: 50%;
+  height: auto;
+}
+
 .ocean { 
   height: 80px;
   width: 100%;
