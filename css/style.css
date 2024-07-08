@@ -242,32 +242,6 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff;
 }
 
-/*#google_translate_element {
-  display: none;
-}
-
-#languageDropdown {
-  background: transparent;
-  border: 2px solid #fff;
-  color: #fff;
-  padding: 10px;
-  border-radius: 5px;
-  transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
-  font-size: 16px;
-  cursor: pointer;
-  margin-right: 30px;
-}
-
-#languageDropdown:hover {
-  background: #0077B6;
-  border: 2px solid #0077B6;
-  color: #fff;
-}
-
-#languageDropdown option {
-  color: #ccc;
-}*/
-
 .btn-services i {
   margin-left: 8px;
 }
