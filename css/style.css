@@ -34,6 +34,12 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0;
 }
 
+@media (max-width: 768px) {
+  html, body {
+    overflow-x: hidden;
+  }
+}
+
 /* Prelaoder */
 #preloader {
   position: fixed;
@@ -63,7 +69,7 @@ h1, h2, h3, h4, h5, h6 {
 @media (max-width: 768px) {
   .back-to-top {
     bottom: 15px;
-    right: 50px;
+    right: 15px;
   }
 }
 
@@ -465,7 +471,7 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (max-width: 768px) {
   #header {
-    height: 80px;
+    height: 60px;
   }
   #header #logo h1 {
     font-size: 26px;
@@ -595,8 +601,8 @@ h1, h2, h3, h4, h5, h6 {
 /* Mobile Nav Toggle */
 #mobile-nav-toggle {
   position: fixed;
-  right: 40px;
-  top: 0;
+  right: 7px;
+  top: -10px;
   z-index: 999;
   margin: 20px 20px 0 0;
   border: 0;
@@ -1324,8 +1330,8 @@ body.mobile-nav-active #mobile-nav-toggle i{
 
 @media (max-width: 768px) {
   .square-flip {
-    width: 100%;
-    
+    width: 60%;
+    transform: translateX(33%);
   }
 }
 
@@ -1417,6 +1423,13 @@ body.mobile-nav-active #mobile-nav-toggle i{
 #sectors .member .social i {
   font-size: 18px;
   margin: 0 2px;
+}
+
+@media (max-width: 768px) {
+  .member {
+    width: 60%;
+    transform: translateX(33%);
+  }
 }
 
 /* Contact Section
