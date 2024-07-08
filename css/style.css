@@ -63,6 +63,7 @@ h1, h2, h3, h4, h5, h6 {
 @media (max-width: 768px) {
   .back-to-top {
     bottom: 15px;
+    right: 50px;
   }
 }
 
@@ -594,7 +595,7 @@ h1, h2, h3, h4, h5, h6 {
 /* Mobile Nav Toggle */
 #mobile-nav-toggle {
   position: fixed;
-  right: 0;
+  right: 40px;
   top: 0;
   z-index: 999;
   margin: 20px 20px 0 0;
