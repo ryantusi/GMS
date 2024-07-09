@@ -7,6 +7,9 @@
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <meta content="global marine supplies,ship supplies,ship services,global ship supplies,shipping supplies,marine supplies,marine accessories,global marine services" name="keywords">
   <meta content="Worldwide Ship Supplies & Services - Determined to serve your vessels with Complete Ship Store requirements across every Major & Minor Ports, Globally." name="description">
+  <meta content="Ryan Tusi" name="author"> 
+  <meta name="robots" content="index, follow">
+  <meta name="googlebot" content="index, follow">
 
   <!-- Place your favicon.ico and apple-touch-icon.png in the template root directory -->
   <link href="img/gms/logo2.jpg" rel="shortcut icon">
@@ -121,7 +124,7 @@
           <li><a href="#sectors">Sectors</a></li>
           <li><a href="#locations">Locations</a></li>
           <li><a href="#contact">Contact Us</a></li>
-          <li><button id="menu-toggle" class="btn-services menu-toggle">☰</button></li>
+          <li><button name="menu-toggle" id="menu-toggle" class="btn-services menu-toggle">☰</button></li>
         </ul>
       </nav>
     </div>
@@ -882,7 +885,7 @@ About Section
       }(jQuery, this, this.document));
   
   </script>
-  <script async>
+  <script defer>
     document.addEventListener("DOMContentLoaded", function () {
       const serviceItems = document.querySelectorAll('.service-item');
   
@@ -903,7 +906,7 @@ About Section
               }
   
               updateTooltip();
-              const interval = setInterval(updateTooltip, 1000);
+              const interval = setInterval(updateTooltip, 1500);
   
               const rect = this.getBoundingClientRect();
               tooltip.style.left = `${rect.left + window.scrollX + rect.width / 2 - tooltip.offsetWidth / 2}px`;
@@ -952,9 +955,9 @@ About Section
       "@context": "https://schema.org",
       "@type": "Organization",
       "name": "Global Marine Supplies",
-      "url": "https://www.globalmarinesupplies.com",
-      "logo": "https://www.globalmarinesupplies.com/img/gms/logo2.jpg",
-      "image": "https://www.globalmarinesupplies.com/img/gms/logo.jpg,
+      "url": "https://www.globalmarinesupplies.in",
+      "logo": "https://www.globalmarinesupplies.in/img/gms/logo2.jpg",
+      "image": "https://www.globalmarinesupplies.in/img/gms/logo.jpg,
       "description": "Global Marine Supplies - Worldwide Ship Supplies & Services - Determined to serve your vessels with Complete Ship Store requirements across every Major & Minor Ports, Globally.",
       "contactPoint": {
         "@type": "ContactPoint",

@@ -318,13 +318,14 @@ h1, h2, h3, h4, h5, h6 {
 
   .hero-logo {
     flex-direction: column;
-    height: auto;
+    height: 60px;
     margin-top: -40px;
   }
 
   .hero-logo img {
-    width: 80%;
-    margin: 10px 0;
+    width: 40%;
+    height: auto;
+    margin: -10px 5px;
   }
 
   .banner {
@@ -338,6 +339,7 @@ h1, h2, h3, h4, h5, h6 {
 
   .wgl-double-heading {
     transform: translateX(0) translateY(0);
+    margin-top: 30px;
   }
 
   .dblh__title-wrapper {
@@ -355,14 +357,14 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   .dblh__content p {
-    font-size: 1rem;
+    font-size: 1.2rem;
     line-height: 1.5rem;
   }
 
   .btn-contact {
     width: 50%;
     font-size: 1.5rem;
-    margin: 10px 50px;
+    margin: 50px;
   }
 
   .actions {
@@ -371,6 +373,7 @@ h1, h2, h3, h4, h5, h6 {
 
   .actions .btn-services {
     font-size: 0.5rem;
+    margin: 20px 0;
   }
 }
 
@@ -1333,6 +1336,10 @@ body.mobile-nav-active #mobile-nav-toggle i{
     width: 60%;
     transform: translateX(33%);
   }
+
+  .square-flip .square2 h3 {
+    font-size: 1.3rem;
+  }
 }
 
 /* sectors Section
@@ -1720,6 +1727,7 @@ li.mtree-node:last-child > ul > li:last-child {
     width: 100%;
     padding: 0px;
     overflow-y: auto; /* Adjust maximum height as needed */
+    height: 100%;
   }
 
   .mtree {
