@@ -31,7 +31,7 @@ The **Global Marine Supplies** website is designed to provide a seamless user ex
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more information.
 
 ## 📬 Contact
-Ryan Tusi - [ryantusi45@gmail.com](https://www.linkedin.com/in/ryantusi/)
-Portfolio Website - [Ryan's Portfolio](https://ryantusi.netlify.app/)
+- Ryan Tusi - [LinkedIn](https://www.linkedin.com/in/ryantusi/)
+- Portfolio Website - [Ryan's Portfolio](https://ryantusi.netlify.app/)
 
 Feel free to reach out if you have any questions or need assistance!
