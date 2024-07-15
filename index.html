@@ -930,15 +930,33 @@ About Section
       const sidebar = document.getElementById('sidebar');
       const closebtn = document.getElementById('closebtn');
       const sidebarcontent = document.getElementById("side-content");
-    
+      const page = document.querySelectorAll("section");
+      const header = document.querySelector("header");
+      const footer = document.querySelector("footer");
+      
+      function blur(event){
+        event.style.filter = "blur(2px)";
+        event.style.transition = "filter 0.5s ease";
+      }
+
       menuToggle.addEventListener('click', function () {
         sidebar.style.width = '450px';
         sidebar.style.padding = "50px";
+        page.forEach(blur);
+        header.style.filter = "blur(2px)";
+        header.style.transition = "filter 0.5s ease";
+        footer.style.filter = "blur(2px)";
+        footer.style.transition = "filter 0.5s ease";
       });
     
       closebtn.addEventListener('click', function () {
         sidebar.style.width = '0';
         sidebar.style.padding = "0";
+        page.forEach(function(event){
+          event.style.filter = "none";
+        })
+        header.style.filter = "none";
+        footer.style.filter = "none";
       });
     
       // Close the sidebar if the user clicks outside of it
