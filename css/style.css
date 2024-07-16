@@ -40,7 +40,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-/* Prelaoder */
+/* Preloader */
 #preloader {
   position: fixed;
   left: 0;
@@ -49,7 +49,23 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
   height: 100%;
   overflow: visible;
-  background: #fff url("../img/preloader.svg") no-repeat center center;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#preloader-image {
+  position: absolute;
+  width: 60px; 
+  height: auto;
+}
+
+#preloader-animation {
+  width: 100px; 
+  height: 100px;
+  background: url("../img/preloader.svg") no-repeat center center;
+  position: relative;
 }
 
 /* Back to top button */
